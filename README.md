@@ -1,6 +1,14 @@
 # AR-Workshop-Demos
 Các demo của ARKit cho buổi technical workshop.
 
+Mội dung:
+
+* [00 - Setup](https://github.com/blkbrds/AR-Workshop-Demos#part-00-setup)
+
+* [01 - Introduction](https://github.com/blkbrds/AR-Workshop-Demos#part-01-introduction)
+
+  
+
 ---
 
 ###  Part 00: Setup
@@ -16,7 +24,7 @@ Tại file `*.xib` của ViewController, kéo thả *ARSCNView* vào view và k�
 Tại file `*.swift` của ViewController, cài đặt 2 functions:
 
 ```swift
-	@IBOutlet weak var sceneView: ARSCNView!
+@IBOutlet weak var sceneView: ARSCNView!
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,6 +37,8 @@ Tại file `*.swift` của ViewController, cài đặt 2 functions:
         sceneView.session.pause()
     }
 ```
+
+---
 
 
 
@@ -57,7 +67,7 @@ func createTextNode(string: String) -> SCNNode {
 Thêm vào màn hình ARKit
 
 ```swift
-		let textNode = self.createTextNode(string: "Hello ARkit")
+let textNode = self.createTextNode(string: "Hello ARkit")
         textNode.position = SCNVector3(-0.1, 0, -0.3)
         sceneView.scene.rootNode.addChildNode(textNode)
 ```
