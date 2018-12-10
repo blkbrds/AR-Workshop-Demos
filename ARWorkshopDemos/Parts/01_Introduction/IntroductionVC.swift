@@ -20,7 +20,6 @@ class IntroductionVC: BaseViewController {
         super.viewDidLoad()
         title = "Introduction"
         addText()
-        
         addTapGestureToSceneView()
     }
     

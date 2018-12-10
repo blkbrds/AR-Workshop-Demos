@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B012921BE2705007E1E75 /* vr_and_ar_tinhte.mp4 */; };
+		2A1B012C21BE5814007E1E75 /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B012B21BE5814007E1E75 /* Assets.scnassets */; };
+		2A1B013021BE5F21007E1E75 /* WhatARKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B012E21BE5F21007E1E75 /* WhatARKitVC.swift */; };
+		2A1B013121BE5F21007E1E75 /* WhatARKitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B012F21BE5F21007E1E75 /* WhatARKitVC.xib */; };
 		2A4DB04521BA2A0A00513B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DB04421BA2A0A00513B15 /* AppDelegate.swift */; };
 		2A4DB04C21BA2A0B00513B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4DB04B21BA2A0B00513B15 /* Assets.xcassets */; };
 		2A4DB04F21BA2A0B00513B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4DB04D21BA2A0B00513B15 /* LaunchScreen.storyboard */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		2A1B012921BE2705007E1E75 /* vr_and_ar_tinhte.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vr_and_ar_tinhte.mp4; sourceTree = "<group>"; };
+		2A1B012B21BE5814007E1E75 /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
+		2A1B012E21BE5F21007E1E75 /* WhatARKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatARKitVC.swift; sourceTree = "<group>"; };
+		2A1B012F21BE5F21007E1E75 /* WhatARKitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatARKitVC.xib; sourceTree = "<group>"; };
 		2A4DB04121BA2A0A00513B15 /* ARWorkshopDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARWorkshopDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4DB04421BA2A0A00513B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A4DB04B21BA2A0B00513B15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1B012D21BE5EB5007E1E75 /* 02_ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B012E21BE5F21007E1E75 /* WhatARKitVC.swift */,
+				2A1B012F21BE5F21007E1E75 /* WhatARKitVC.xib */,
+			);
+			path = 02_ARKit;
+			sourceTree = "<group>";
+		};
 		2A4DB03821BA2A0A00513B15 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,7 @@
 			children = (
 				2A4DB05721BA2A7E00513B15 /* 00_ListDemos */,
 				2A4DB05E21BA510600513B15 /* 01_Introduction */,
+				2A1B012D21BE5EB5007E1E75 /* 02_ARKit */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
@@ -108,6 +124,7 @@
 				2A1B012921BE2705007E1E75 /* vr_and_ar_tinhte.mp4 */,
 				2A4DB04B21BA2A0B00513B15 /* Assets.xcassets */,
 				2A4DB04D21BA2A0B00513B15 /* LaunchScreen.storyboard */,
+				2A1B012B21BE5814007E1E75 /* Assets.scnassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,6 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1B013121BE5F21007E1E75 /* WhatARKitVC.xib in Resources */,
+				2A1B012C21BE5814007E1E75 /* Assets.scnassets in Resources */,
 				2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */,
 				2A4DB04F21BA2A0B00513B15 /* LaunchScreen.storyboard in Resources */,
 				2A4DB05B21BA2AA400513B15 /* HomeVC.xib in Resources */,
@@ -215,6 +234,7 @@
 				2A4DB06A21BA5A0C00513B15 /* SampleShape.swift in Sources */,
 				2A4DB06621BA542500513B15 /* BaseViewController.swift in Sources */,
 				2A4DB04521BA2A0A00513B15 /* AppDelegate.swift in Sources */,
+				2A1B013021BE5F21007E1E75 /* WhatARKitVC.swift in Sources */,
 				2A4DB06721BA542500513B15 /* BaseNavigationController.swift in Sources */,
 				2A4DB05A21BA2AA400513B15 /* HomeVC.swift in Sources */,
 			);
