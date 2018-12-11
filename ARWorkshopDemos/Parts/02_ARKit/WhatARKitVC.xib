@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroductionVC" customModule="ARWorkshopDemos" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhatARKitVC" customModule="ARWorkshopDemos" customModuleProvider="target">
             <connections>
-                <outlet property="sceneView" destination="0Fq-2b-FSI" id="fkf-1h-1Xx"/>
+                <outlet property="sceneView" destination="mSQ-6N-ZSo" id="oKr-do-hNs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,29 +21,29 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fq-2b-FSI">
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-6N-ZSo">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </arscnView>
-                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcr-D4-6OR">
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYq-s1-Kd6">
                     <rect key="frame" x="16" y="20" width="40" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="WTy-wY-fSi"/>
-                        <constraint firstAttribute="width" constant="40" id="yPu-Br-fue"/>
+                        <constraint firstAttribute="width" constant="40" id="Mz0-Dg-Kzo"/>
+                        <constraint firstAttribute="height" constant="40" id="SLg-Cp-yCV"/>
                     </constraints>
                     <state key="normal" image="ic_bt_close"/>
                     <connections>
-                        <action selector="back:" destination="-1" eventType="touchUpInside" id="cRb-xM-RQr"/>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="hwh-Tw-76O"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="0Fq-2b-FSI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="30T-r2-x7N"/>
-                <constraint firstItem="Wcr-D4-6OR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HKt-wP-66K"/>
-                <constraint firstItem="0Fq-2b-FSI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Qe9-l5-qAt"/>
-                <constraint firstItem="0Fq-2b-FSI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="XdZ-uN-6mb"/>
-                <constraint firstItem="0Fq-2b-FSI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nl6-np-DFY"/>
-                <constraint firstItem="Wcr-D4-6OR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="s6U-xJ-TKq"/>
+                <constraint firstItem="mSQ-6N-ZSo" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="7Vy-p6-agO"/>
+                <constraint firstItem="mSQ-6N-ZSo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vvt-Af-2h6"/>
+                <constraint firstItem="mSQ-6N-ZSo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="d2z-AX-fiY"/>
+                <constraint firstItem="yYq-s1-Kd6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="d6A-EA-1Es"/>
+                <constraint firstItem="mSQ-6N-ZSo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="w1a-PW-8Yq"/>
+                <constraint firstItem="yYq-s1-Kd6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zeq-xS-5F3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
