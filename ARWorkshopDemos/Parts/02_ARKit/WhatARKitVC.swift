@@ -12,6 +12,9 @@ import ARKit
 class WhatARKitVC: BaseViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
+    
+    var cameraNode: SCNNode!
+    var chipComputerNode: SCNNode!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +39,16 @@ class WhatARKitVC: BaseViewController {
         let gameScene = SCNScene(named: "Assets.scnassets/cameraScene.scn")!
         sceneView.scene = gameScene
         let container = gameScene.rootNode.childNode(withName: "container", recursively: false)!
-        //let camera = container.childNode(withName: "camera", recursively: true)!
+        cameraNode = container.childNode(withName: "camera", recursively: true)!
+        chipComputerNode = container.childNode(withName: "chipComputer", recursively: true)!
+
         container.position = SCNVector3(0, 0, -0.5)
+        
+        //add action
+        let action = SCNAction.rotate(by: 360 * CGFloat((Double.pi)/180), around: SCNVector3(x:0, y:1, z:0), duration: 8)
+        let repeatAction = SCNAction.repeatForever(action)
+        cameraNode.runAction(repeatAction)
+        chipComputerNode.runAction(repeatAction)
     }
 
 
