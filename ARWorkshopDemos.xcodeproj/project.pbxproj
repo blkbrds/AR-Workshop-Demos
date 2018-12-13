@@ -21,6 +21,8 @@
 		2A4DB06621BA542500513B15 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DB06421BA542500513B15 /* BaseViewController.swift */; };
 		2A4DB06721BA542500513B15 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DB06521BA542500513B15 /* BaseNavigationController.swift */; };
 		2A4DB06A21BA5A0C00513B15 /* SampleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DB06921BA5A0C00513B15 /* SampleShape.swift */; };
+		2ACF773721BFAAD70099A818 /* EnvironmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */; };
+		2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2A4DB06421BA542500513B15 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2A4DB06521BA542500513B15 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		2A4DB06921BA5A0C00513B15 /* SampleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleShape.swift; sourceTree = "<group>"; };
+		2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVC.swift; sourceTree = "<group>"; };
+		2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvironmentVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				2A4DB05721BA2A7E00513B15 /* 00_ListDemos */,
 				2A4DB05E21BA510600513B15 /* 01_Introduction */,
 				2A1B012D21BE5EB5007E1E75 /* 02_ARKit */,
+				2ACF773421BFAAB80099A818 /* 03_ Environment */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
@@ -153,6 +158,15 @@
 				2A4DB06921BA5A0C00513B15 /* SampleShape.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		2ACF773421BFAAB80099A818 /* 03_ Environment */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */,
+				2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */,
+			);
+			path = "03_ Environment";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */,
 				2A1B013121BE5F21007E1E75 /* WhatARKitVC.xib in Resources */,
 				2A1B012C21BE5814007E1E75 /* Assets.scnassets in Resources */,
 				2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */,
@@ -234,6 +249,7 @@
 				2A4DB06A21BA5A0C00513B15 /* SampleShape.swift in Sources */,
 				2A4DB06621BA542500513B15 /* BaseViewController.swift in Sources */,
 				2A4DB04521BA2A0A00513B15 /* AppDelegate.swift in Sources */,
+				2ACF773721BFAAD70099A818 /* EnvironmentVC.swift in Sources */,
 				2A1B013021BE5F21007E1E75 /* WhatARKitVC.swift in Sources */,
 				2A4DB06721BA542500513B15 /* BaseNavigationController.swift in Sources */,
 				2A4DB05A21BA2AA400513B15 /* HomeVC.swift in Sources */,
