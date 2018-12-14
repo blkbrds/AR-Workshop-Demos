@@ -81,20 +81,20 @@ class EnvironmentVC: BaseViewController {
         resetSceneNodes()
         // step 0
         workerNode.position = SCNVector3(0,0, -0.5)
-        containerNode.addChildNode(workerNode)
+        workerNode.isHidden = false
     }
     
     func resetSceneNodes() {
         stepTap = 0
         
         //remove nodes
-        xcodeIconNode.removeFromParentNode()
-        sheepNode.removeFromParentNode()
-        xcodeIconNode.removeFromParentNode()
-        spriteIconNode.removeFromParentNode()
-        sceneIconNode.removeFromParentNode()
-        sunNode.removeFromParentNode()
-        iphoneNode.removeFromParentNode()
+        xcodeIconNode.isHidden = true
+        sheepNode.isHidden = true
+        xcodeIconNode.isHidden = true
+        spriteIconNode.isHidden = true
+        sceneIconNode.isHidden = true
+        sunNode.isHidden = true
+        iphoneNode.isHidden = true
 
         //title
         titleStepLabel.text = titles[stepTap]
@@ -106,19 +106,19 @@ class EnvironmentVC: BaseViewController {
         
             switch stepTap {
             case 0:
-                workerNode.removeFromParentNode()
+                workerNode.isHidden = true
             case 1:
-                xcodeIconNode.removeFromParentNode()
+                xcodeIconNode.isHidden = true
             case 2:
-                spriteIconNode.removeFromParentNode()
+                spriteIconNode.isHidden = true
             case 3:
-                sceneIconNode.removeFromParentNode()
+                sceneIconNode.isHidden = true
             case 4:
-                sheepNode.removeFromParentNode()
+                sheepNode.isHidden = true
             case 5:
-                sunNode.removeFromParentNode()
+                sunNode.isHidden = true
             case 6:
-                iphoneNode.removeFromParentNode()
+                iphoneNode.isHidden = true
             default:
                 print("step \(stepTap)")
             }
@@ -137,25 +137,25 @@ class EnvironmentVC: BaseViewController {
             switch stepTap {
             case 0:
                 workerNode.position = SCNVector3(0,0, -0.5)
-                containerNode.addChildNode(workerNode)
+                workerNode.isHidden = false
             case 1:
                 xcodeIconNode.position = SCNVector3(0, 1, -0.5)
-                containerNode.addChildNode(xcodeIconNode)
+                xcodeIconNode.isHidden = false
             case 2:
                 spriteIconNode.position = SCNVector3(-0.5, 0.5, -0.5)
-                containerNode.addChildNode(spriteIconNode)
+                spriteIconNode.isHidden = false
             case 3:
                 sceneIconNode.position = SCNVector3(0.5, 0.5, -0.5)
-                containerNode.addChildNode(sceneIconNode)
+                sceneIconNode.isHidden = false
             case 4:
                 sheepNode.position = SCNVector3(2, 0, -0.5)
-                containerNode.addChildNode(sheepNode)
+                sheepNode.isHidden = false
             case 5:
                 sunNode.position = SCNVector3(1.5, 0.5, -0.5)
-                containerNode.addChildNode(sunNode)
+                sunNode.isHidden = false
             case 6:
                 iphoneNode.position = SCNVector3(2.5, 0.5, -0.5)
-                containerNode.addChildNode(iphoneNode)
+                iphoneNode.isHidden = false
             default:
                 print("step \(stepTap)")
             }
@@ -166,7 +166,7 @@ class EnvironmentVC: BaseViewController {
         resetSceneNodes()
         // step 0
         workerNode.position = SCNVector3(0,0, -0.5)
-        containerNode.addChildNode(workerNode)
+        workerNode.isHidden = false
     }
 
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GraphicsVC" customModule="ARWorkshopDemos" customModuleProvider="target">
+            <connections>
+                <outlet property="sceneView" destination="7Uv-jn-2z5" id="Wg8-bi-ZD6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Uv-jn-2z5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </arscnView>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZA-yp-st7">
+                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="NUw-qp-qk4"/>
+                        <constraint firstAttribute="height" constant="40" id="gV3-fc-5as"/>
+                    </constraints>
+                    <state key="normal" image="ic_bt_close"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="ylx-dI-oKx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Uv-jn-2z5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0h0-1E-bej"/>
+                <constraint firstItem="7Uv-jn-2z5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3Mq-Ve-TLz"/>
+                <constraint firstItem="7Uv-jn-2z5" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="4CA-2Z-TRR"/>
+                <constraint firstItem="fZA-yp-st7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="4u7-m6-HfP"/>
+                <constraint firstItem="7Uv-jn-2z5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KYx-Ee-elo"/>
+                <constraint firstItem="fZA-yp-st7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="VgW-HK-YvE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_bt_close" width="192" height="192"/>
+    </resources>
+</document>
