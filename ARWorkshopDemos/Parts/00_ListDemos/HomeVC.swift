@@ -57,6 +57,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         case 2:
             let vc = EnvironmentVC()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = GraphicsVC()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("Nothing")
         }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A104EB221C351B100851C6D /* GraphicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A104EB021C351B100851C6D /* GraphicsVC.swift */; };
+		2A104EB321C351B100851C6D /* GraphicsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A104EB121C351B100851C6D /* GraphicsVC.xib */; };
 		2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B012921BE2705007E1E75 /* vr_and_ar_tinhte.mp4 */; };
 		2A1B012C21BE5814007E1E75 /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1B012B21BE5814007E1E75 /* Assets.scnassets */; };
 		2A1B013021BE5F21007E1E75 /* WhatARKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1B012E21BE5F21007E1E75 /* WhatARKitVC.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A104EB021C351B100851C6D /* GraphicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsVC.swift; sourceTree = "<group>"; };
+		2A104EB121C351B100851C6D /* GraphicsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphicsVC.xib; sourceTree = "<group>"; };
 		2A1B012921BE2705007E1E75 /* vr_and_ar_tinhte.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vr_and_ar_tinhte.mp4; sourceTree = "<group>"; };
 		2A1B012B21BE5814007E1E75 /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
 		2A1B012E21BE5F21007E1E75 /* WhatARKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatARKitVC.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A104EAF21C3507C00851C6D /* 04_Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				2A104EB021C351B100851C6D /* GraphicsVC.swift */,
+				2A104EB121C351B100851C6D /* GraphicsVC.xib */,
+			);
+			path = 04_Graphics;
+			sourceTree = "<group>";
+		};
 		2A1B012D21BE5EB5007E1E75 /* 02_ARKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 				2A4DB05E21BA510600513B15 /* 01_Introduction */,
 				2A1B012D21BE5EB5007E1E75 /* 02_ARKit */,
 				2ACF773421BFAAB80099A818 /* 03_ Environment */,
+				2A104EAF21C3507C00851C6D /* 04_Graphics */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
@@ -233,6 +247,7 @@
 				2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */,
 				2A4DB04F21BA2A0B00513B15 /* LaunchScreen.storyboard in Resources */,
 				2A4DB05B21BA2AA400513B15 /* HomeVC.xib in Resources */,
+				2A104EB321C351B100851C6D /* GraphicsVC.xib in Resources */,
 				2A4DB06221BA539900513B15 /* IntroductionVC.xib in Resources */,
 				2A4DB04C21BA2A0B00513B15 /* Assets.xcassets in Resources */,
 			);
@@ -252,6 +267,7 @@
 				2ACF773721BFAAD70099A818 /* EnvironmentVC.swift in Sources */,
 				2A1B013021BE5F21007E1E75 /* WhatARKitVC.swift in Sources */,
 				2A4DB06721BA542500513B15 /* BaseNavigationController.swift in Sources */,
+				2A104EB221C351B100851C6D /* GraphicsVC.swift in Sources */,
 				2A4DB05A21BA2AA400513B15 /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
