@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoordinateVC" customModule="ARWorkshopDemos" customModuleProvider="target">
+            <connections>
+                <outlet property="sceneView" destination="bDb-5x-E5X" id="xb8-cK-1Rg"/>
+                <outlet property="sixDOFButton" destination="1du-Rv-EQk" id="lOj-lY-fvg"/>
+                <outlet property="threeDOFButton" destination="o5N-5F-urd" id="207-4d-1o5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDb-5x-E5X">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </arscnView>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OG3-8j-j3p">
+                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="O89-Ml-zFX"/>
+                        <constraint firstAttribute="height" constant="40" id="uoJ-uL-ewJ"/>
+                    </constraints>
+                    <state key="normal" image="ic_bt_close"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="7t4-MO-GLo"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgR-Lh-S8U">
+                    <rect key="frame" x="87.5" y="607" width="200" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5N-5F-urd">
+                            <rect key="frame" x="8" y="5" width="50" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="3DOF">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="dofButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="CDs-8J-jEC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1du-Rv-EQk">
+                            <rect key="frame" x="142" y="5" width="50" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="6DOF">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="dofButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="eAz-fG-wgp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Qvh-yA-sej"/>
+                        <constraint firstAttribute="height" constant="50" id="UUA-8V-bJO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tgR-Lh-S8U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Mmg-ZW-bs3"/>
+                <constraint firstItem="OG3-8j-j3p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Sjk-IZ-vcX"/>
+                <constraint firstItem="OG3-8j-j3p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="SvD-Br-p8r"/>
+                <constraint firstItem="bDb-5x-E5X" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WQR-3l-Hhq"/>
+                <constraint firstItem="bDb-5x-E5X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eu1-Iv-bqO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tgR-Lh-S8U" secondAttribute="bottom" constant="10" id="euY-zD-Tos"/>
+                <constraint firstItem="bDb-5x-E5X" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="iOU-np-JQR"/>
+                <constraint firstItem="bDb-5x-E5X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ihc-Ef-Ued"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_bt_close" width="192" height="192"/>
+    </resources>
+</document>
