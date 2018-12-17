@@ -60,6 +60,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         case 3:
             let vc = GraphicsVC()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = CoordinateVC()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("Nothing")
         }

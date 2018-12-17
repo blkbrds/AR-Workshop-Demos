@@ -23,6 +23,8 @@
 		2A4DB06621BA542500513B15 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DB06421BA542500513B15 /* BaseViewController.swift */; };
 		2A4DB06721BA542500513B15 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DB06521BA542500513B15 /* BaseNavigationController.swift */; };
 		2A4DB06A21BA5A0C00513B15 /* SampleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4DB06921BA5A0C00513B15 /* SampleShape.swift */; };
+		2ACAE84F21C7931F007DE5F3 /* CoordinateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAE84D21C7931F007DE5F3 /* CoordinateVC.swift */; };
+		2ACAE85021C7931F007DE5F3 /* CoordinateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAE84E21C7931F007DE5F3 /* CoordinateVC.xib */; };
 		2ACF773721BFAAD70099A818 /* EnvironmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */; };
 		2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		2A4DB06421BA542500513B15 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2A4DB06521BA542500513B15 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		2A4DB06921BA5A0C00513B15 /* SampleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleShape.swift; sourceTree = "<group>"; };
+		2ACAE84D21C7931F007DE5F3 /* CoordinateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateVC.swift; sourceTree = "<group>"; };
+		2ACAE84E21C7931F007DE5F3 /* CoordinateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoordinateVC.xib; sourceTree = "<group>"; };
 		2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVC.swift; sourceTree = "<group>"; };
 		2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvironmentVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +120,7 @@
 				2A1B012D21BE5EB5007E1E75 /* 02_ARKit */,
 				2ACF773421BFAAB80099A818 /* 03_ Environment */,
 				2A104EAF21C3507C00851C6D /* 04_Graphics */,
+				2ACAE84C21C79302007DE5F3 /* 05_Coordinate */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
@@ -172,6 +177,15 @@
 				2A4DB06921BA5A0C00513B15 /* SampleShape.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		2ACAE84C21C79302007DE5F3 /* 05_Coordinate */ = {
+			isa = PBXGroup;
+			children = (
+				2ACAE84D21C7931F007DE5F3 /* CoordinateVC.swift */,
+				2ACAE84E21C7931F007DE5F3 /* CoordinateVC.xib */,
+			);
+			path = 05_Coordinate;
 			sourceTree = "<group>";
 		};
 		2ACF773421BFAAB80099A818 /* 03_ Environment */ = {
@@ -243,6 +257,7 @@
 			files = (
 				2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */,
 				2A1B013121BE5F21007E1E75 /* WhatARKitVC.xib in Resources */,
+				2ACAE85021C7931F007DE5F3 /* CoordinateVC.xib in Resources */,
 				2A1B012C21BE5814007E1E75 /* Assets.scnassets in Resources */,
 				2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */,
 				2A4DB04F21BA2A0B00513B15 /* LaunchScreen.storyboard in Resources */,
@@ -260,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACAE84F21C7931F007DE5F3 /* CoordinateVC.swift in Sources */,
 				2A4DB06121BA539900513B15 /* IntroductionVC.swift in Sources */,
 				2A4DB06A21BA5A0C00513B15 /* SampleShape.swift in Sources */,
 				2A4DB06621BA542500513B15 /* BaseViewController.swift in Sources */,
