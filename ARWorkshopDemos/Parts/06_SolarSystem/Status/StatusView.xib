@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusView" customModule="ARWorkshopDemos" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="B1N-wo-jA5"/>
+                <outlet property="messageLabel" destination="O3X-GR-IFK" id="f0W-ZJ-5t4"/>
+                <outlet property="messagePanel" destination="zNE-Zx-REd" id="Whu-Wx-fTY"/>
+                <outlet property="restartExperienceButton" destination="hO6-QA-orq" id="oXb-VA-Tnk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNE-Zx-REd" userLabel="Message Panel">
+                    <rect key="frame" x="16" y="20" width="125" height="32"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fR5-Yq-9GA">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogu-UX-W0L">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VtR-Ed-jRF">
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-GR-IFK" userLabel="messageLabel">
+                                            <rect key="frame" x="16" y="8" width="93" height="16"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="textColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="O3X-GR-IFK" firstAttribute="leading" secondItem="VtR-Ed-jRF" secondAttribute="leading" constant="16" id="0oU-lo-V1d"/>
+                                        <constraint firstItem="O3X-GR-IFK" firstAttribute="centerX" secondItem="VtR-Ed-jRF" secondAttribute="centerX" id="Olk-cF-BUp"/>
+                                        <constraint firstItem="O3X-GR-IFK" firstAttribute="centerY" secondItem="VtR-Ed-jRF" secondAttribute="centerY" id="h9r-aJ-tHP"/>
+                                        <constraint firstItem="O3X-GR-IFK" firstAttribute="top" secondItem="VtR-Ed-jRF" secondAttribute="top" constant="8" id="jb4-Ae-rBx"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ogu-UX-W0L" firstAttribute="leading" secondItem="fR5-Yq-9GA" secondAttribute="leading" id="DTa-6C-GoE"/>
+                            <constraint firstItem="ogu-UX-W0L" firstAttribute="top" secondItem="fR5-Yq-9GA" secondAttribute="top" id="IAu-qY-Pq2"/>
+                            <constraint firstAttribute="bottom" secondItem="ogu-UX-W0L" secondAttribute="bottom" id="LCY-gh-F7a"/>
+                            <constraint firstAttribute="trailing" secondItem="ogu-UX-W0L" secondAttribute="trailing" id="tES-cU-xkb"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO6-QA-orq" userLabel="restartExperienceButton">
+                    <rect key="frame" x="331" y="0.0" width="44" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="hRA-3B-TG0"/>
+                        <constraint firstAttribute="height" constant="59" id="rh5-R3-zB7"/>
+                    </constraints>
+                    <state key="normal" image="refresh"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hO6-QA-orq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="18z-X0-BwV"/>
+                <constraint firstAttribute="bottom" secondItem="zNE-Zx-REd" secondAttribute="bottom" constant="33" id="AS8-dB-xnU"/>
+                <constraint firstAttribute="trailing" secondItem="hO6-QA-orq" secondAttribute="trailing" id="Q04-CR-fGB"/>
+                <constraint firstItem="hO6-QA-orq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zNE-Zx-REd" secondAttribute="trailing" constant="8" id="S6u-We-Xhn"/>
+                <constraint firstItem="zNE-Zx-REd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="XOB-nU-22k"/>
+                <constraint firstItem="zNE-Zx-REd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="kBv-rN-teb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh" width="20" height="23"/>
+    </resources>
+</document>
