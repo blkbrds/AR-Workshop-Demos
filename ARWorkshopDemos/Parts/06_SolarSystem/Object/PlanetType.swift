@@ -31,7 +31,7 @@ enum PlanetType {
         case .venus:
             return Planet(radius: 0.04, diffuse: #imageLiteral(resourceName: "venus"), anxisTime: 12, revolTime: 14, distance: 0.6);
         case .earth:
-            return Planet(radius: 0.05, diffuse: #imageLiteral(resourceName: "saturn"), specular: #imageLiteral(resourceName: "earth_specular"), emission: #imageLiteral(resourceName: "earth-emissive"), normal: nil, anxisTime: 16, revolTime: 18, distance: 0.8, hasChild:true);
+            return Planet(radius: 0.05, diffuse: #imageLiteral(resourceName: "earth-diffuse"), specular: #imageLiteral(resourceName: "earth-specular"), emission: #imageLiteral(resourceName: "earth-emissive"), normal: nil, anxisTime: 16, revolTime: 18, distance: 0.8, hasChild:true);
         case .moon:
             return Planet(radius: 0.01, diffuse: #imageLiteral(resourceName: "moon"), specular: nil, emission: nil, normal: nil, anxisTime: 2, revolTime: 6, distance: 0.1);
         case .mars:

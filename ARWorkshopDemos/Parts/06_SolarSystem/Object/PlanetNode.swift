@@ -143,7 +143,7 @@ final class PlanetNode: SCNNode {
             let haloNode = SCNNode()
             haloNode.geometry = SCNPlane(width: 1.2, height: 1.2)
             haloNode.rotation = SCNVector4(0, 0, 1, -Float.pi/2)
-            haloNode.geometry?.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "saturn")
+            haloNode.geometry?.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "sun-halo")
             haloNode.geometry?.firstMaterial?.lightingModel = .constant
             haloNode.geometry?.firstMaterial?.writesToDepthBuffer = false
             haloNode.opacity = 0.8
