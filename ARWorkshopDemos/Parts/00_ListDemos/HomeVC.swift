@@ -63,6 +63,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         case 4:
             let vc = CoordinateVC()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 5:
+            let vc = SolarSystemViewController()
+            navigationController?.pushViewController(vc, animated: true)
         default:
             print("Nothing")
         }

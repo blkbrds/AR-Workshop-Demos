@@ -27,6 +27,22 @@
 		2ACAE85021C7931F007DE5F3 /* CoordinateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAE84E21C7931F007DE5F3 /* CoordinateVC.xib */; };
 		2ACF773721BFAAD70099A818 /* EnvironmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */; };
 		2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */; };
+		644E0F7121ECF55400DCF1BD /* SingleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E0F6F21ECF55400DCF1BD /* SingleCell.swift */; };
+		644E0F7221ECF55400DCF1BD /* SingleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 644E0F7021ECF55400DCF1BD /* SingleCell.xib */; };
+		646A384021ECCD9D007798BE /* SolarSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A383E21ECCD9D007798BE /* SolarSystemViewController.swift */; };
+		646A384121ECCD9D007798BE /* SolarSystemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646A383F21ECCD9D007798BE /* SolarSystemViewController.xib */; };
+		646A384721ECCE54007798BE /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A384521ECCE54007798BE /* StatusView.swift */; };
+		646A384821ECCE54007798BE /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646A384621ECCE54007798BE /* StatusView.xib */; };
+		646A384C21ECD4AF007798BE /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A384B21ECD4AF007798BE /* VirtualObjectARView.swift */; };
+		646A384E21ECD5E6007798BE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A384D21ECD5E6007798BE /* Utilities.swift */; };
+		646A385121ECD649007798BE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A385021ECD649007798BE /* Planet.swift */; };
+		646A385321ECD680007798BE /* PlanetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A385221ECD680007798BE /* PlanetType.swift */; };
+		646A385521ECD6B0007798BE /* PlanetLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A385421ECD6B0007798BE /* PlanetLoop.swift */; };
+		646A385721ECD7A3007798BE /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A385621ECD7A3007798BE /* PlanetNode.swift */; };
+		646A385921ECD92A007798BE /* environment_blur.exr in Resources */ = {isa = PBXBuildFile; fileRef = 646A385821ECD92A007798BE /* environment_blur.exr */; };
+		646A385B21ECDAFA007798BE /* ThresholdPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A385A21ECDAFA007798BE /* ThresholdPanGesture.swift */; };
+		646A385D21ECDC10007798BE /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A385C21ECDC10007798BE /* VirtualObjectInteraction.swift */; };
+		646A386021ECDD10007798BE /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A385F21ECDD10007798BE /* FocusSquare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +68,22 @@
 		2ACAE84E21C7931F007DE5F3 /* CoordinateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoordinateVC.xib; sourceTree = "<group>"; };
 		2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVC.swift; sourceTree = "<group>"; };
 		2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvironmentVC.xib; sourceTree = "<group>"; };
+		644E0F6F21ECF55400DCF1BD /* SingleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCell.swift; sourceTree = "<group>"; };
+		644E0F7021ECF55400DCF1BD /* SingleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleCell.xib; sourceTree = "<group>"; };
+		646A383E21ECCD9D007798BE /* SolarSystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemViewController.swift; sourceTree = "<group>"; };
+		646A383F21ECCD9D007798BE /* SolarSystemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SolarSystemViewController.xib; sourceTree = "<group>"; };
+		646A384521ECCE54007798BE /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		646A384621ECCE54007798BE /* StatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
+		646A384B21ECD4AF007798BE /* VirtualObjectARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
+		646A384D21ECD5E6007798BE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		646A385021ECD649007798BE /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		646A385221ECD680007798BE /* PlanetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetType.swift; sourceTree = "<group>"; };
+		646A385421ECD6B0007798BE /* PlanetLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetLoop.swift; sourceTree = "<group>"; };
+		646A385621ECD7A3007798BE /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
+		646A385821ECD92A007798BE /* environment_blur.exr */ = {isa = PBXFileReference; lastKnownFileType = file; path = environment_blur.exr; sourceTree = "<group>"; };
+		646A385A21ECDAFA007798BE /* ThresholdPanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdPanGesture.swift; sourceTree = "<group>"; };
+		646A385C21ECDC10007798BE /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
+		646A385F21ECDD10007798BE /* FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +153,7 @@
 				2ACF773421BFAAB80099A818 /* 03_ Environment */,
 				2A104EAF21C3507C00851C6D /* 04_Graphics */,
 				2ACAE84C21C79302007DE5F3 /* 05_Coordinate */,
+				646A383D21ECCD74007798BE /* 06_SolarSystem */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
@@ -145,6 +178,7 @@
 		2A4DB05D21BA2AC900513B15 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				646A385821ECD92A007798BE /* environment_blur.exr */,
 				2A1B012921BE2705007E1E75 /* vr_and_ar_tinhte.mp4 */,
 				2A4DB04B21BA2A0B00513B15 /* Assets.xcassets */,
 				2A4DB04D21BA2A0B00513B15 /* LaunchScreen.storyboard */,
@@ -175,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				2A4DB06921BA5A0C00513B15 /* SampleShape.swift */,
+				646A384D21ECD5E6007798BE /* Utilities.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -195,6 +230,59 @@
 				2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */,
 			);
 			path = "03_ Environment";
+			sourceTree = "<group>";
+		};
+		644E0F6E21ECF53D00DCF1BD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				644E0F6F21ECF55400DCF1BD /* SingleCell.swift */,
+				644E0F7021ECF55400DCF1BD /* SingleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		646A383D21ECCD74007798BE /* 06_SolarSystem */ = {
+			isa = PBXGroup;
+			children = (
+				644E0F6E21ECF53D00DCF1BD /* Cell */,
+				646A385E21ECDCCB007798BE /* Focus */,
+				646A384F21ECD630007798BE /* Object */,
+				646A383E21ECCD9D007798BE /* SolarSystemViewController.swift */,
+				646A383F21ECCD9D007798BE /* SolarSystemViewController.xib */,
+				646A384221ECCDB0007798BE /* Status */,
+				646A385A21ECDAFA007798BE /* ThresholdPanGesture.swift */,
+				646A384B21ECD4AF007798BE /* VirtualObjectARView.swift */,
+				646A385C21ECDC10007798BE /* VirtualObjectInteraction.swift */,
+			);
+			path = 06_SolarSystem;
+			sourceTree = "<group>";
+		};
+		646A384221ECCDB0007798BE /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				646A384521ECCE54007798BE /* StatusView.swift */,
+				646A384621ECCE54007798BE /* StatusView.xib */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		646A384F21ECD630007798BE /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				646A385021ECD649007798BE /* Planet.swift */,
+				646A385421ECD6B0007798BE /* PlanetLoop.swift */,
+				646A385621ECD7A3007798BE /* PlanetNode.swift */,
+				646A385221ECD680007798BE /* PlanetType.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		646A385E21ECDCCB007798BE /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				646A385F21ECDD10007798BE /* FocusSquare.swift */,
+			);
+			path = Focus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,12 +346,16 @@
 				2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */,
 				2A1B013121BE5F21007E1E75 /* WhatARKitVC.xib in Resources */,
 				2ACAE85021C7931F007DE5F3 /* CoordinateVC.xib in Resources */,
+				644E0F7221ECF55400DCF1BD /* SingleCell.xib in Resources */,
 				2A1B012C21BE5814007E1E75 /* Assets.scnassets in Resources */,
 				2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */,
 				2A4DB04F21BA2A0B00513B15 /* LaunchScreen.storyboard in Resources */,
 				2A4DB05B21BA2AA400513B15 /* HomeVC.xib in Resources */,
+				646A384121ECCD9D007798BE /* SolarSystemViewController.xib in Resources */,
+				646A385921ECD92A007798BE /* environment_blur.exr in Resources */,
 				2A104EB321C351B100851C6D /* GraphicsVC.xib in Resources */,
 				2A4DB06221BA539900513B15 /* IntroductionVC.xib in Resources */,
+				646A384821ECCE54007798BE /* StatusView.xib in Resources */,
 				2A4DB04C21BA2A0B00513B15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,13 +368,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACAE84F21C7931F007DE5F3 /* CoordinateVC.swift in Sources */,
+				644E0F7121ECF55400DCF1BD /* SingleCell.swift in Sources */,
+				646A386021ECDD10007798BE /* FocusSquare.swift in Sources */,
+				646A385321ECD680007798BE /* PlanetType.swift in Sources */,
 				2A4DB06121BA539900513B15 /* IntroductionVC.swift in Sources */,
+				646A385D21ECDC10007798BE /* VirtualObjectInteraction.swift in Sources */,
+				646A384E21ECD5E6007798BE /* Utilities.swift in Sources */,
+				646A384C21ECD4AF007798BE /* VirtualObjectARView.swift in Sources */,
+				646A385721ECD7A3007798BE /* PlanetNode.swift in Sources */,
+				646A384721ECCE54007798BE /* StatusView.swift in Sources */,
 				2A4DB06A21BA5A0C00513B15 /* SampleShape.swift in Sources */,
 				2A4DB06621BA542500513B15 /* BaseViewController.swift in Sources */,
 				2A4DB04521BA2A0A00513B15 /* AppDelegate.swift in Sources */,
 				2ACF773721BFAAD70099A818 /* EnvironmentVC.swift in Sources */,
+				646A385121ECD649007798BE /* Planet.swift in Sources */,
+				646A385521ECD6B0007798BE /* PlanetLoop.swift in Sources */,
+				646A385B21ECDAFA007798BE /* ThresholdPanGesture.swift in Sources */,
 				2A1B013021BE5F21007E1E75 /* WhatARKitVC.swift in Sources */,
 				2A4DB06721BA542500513B15 /* BaseNavigationController.swift in Sources */,
+				646A384021ECCD9D007798BE /* SolarSystemViewController.swift in Sources */,
 				2A104EB221C351B100851C6D /* GraphicsVC.swift in Sources */,
 				2A4DB05A21BA2AA400513B15 /* HomeVC.swift in Sources */,
 			);
