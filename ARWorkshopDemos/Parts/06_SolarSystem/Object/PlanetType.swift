@@ -83,7 +83,7 @@ enum PlanetType: String {
         case .mercury:
             return 60
         case .saturn:
-            return 15
+            return 10
         case .venus:
             return 35
         default:

@@ -203,6 +203,7 @@ final class SolarSystemViewController: UIViewController {
         statusView.cancelAllScheduledMessages()
         self.sunNode.removeFromParentNode()
         self.sunNode.reset()
+        sunNode.hiddenAll(isHidden: true)
         addObjectButton.isHidden = false
         addObjectButton.setImage(#imageLiteral(resourceName: "add"), for: [])
         addObjectButton.setImage(#imageLiteral(resourceName: "addPressed"), for: [.highlighted])
