@@ -14,11 +14,19 @@ final class SolarSystemViewController: UIViewController {
     @IBOutlet weak var addObjectButton: UIButton!
     @IBOutlet weak var sceneView: VirtualObjectARView!
     @IBOutlet weak var statusView: StatusView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var singleSceneView: SCNView!
+    @IBOutlet weak var oneButton: UIButton!
+    @IBOutlet weak var allButton: UIButton!
     
     var focusSquare = FocusSquare()
     lazy var virtualObjectInteraction = VirtualObjectInteraction(sceneView: sceneView)
-    lazy var isObjectVisible = false
     lazy var sunNode = initSunNode()
+    
+    var singleTypes: [PlanetType] = [.earth, .jupiter, .mars, .mercury, .neptune, .venus, .saturn, .uranus]
+    lazy var isObjectVisible = false
+    var singleVisible = false
+    var currentSingle: PlanetType = .earth
     
     var isRestartAvailable = true
     let updateQueue = DispatchQueue(label: "com.fx.ARWorkshopDemos")
@@ -33,6 +41,11 @@ final class SolarSystemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initSceneView()
+        
+        let nib = UINib(nibName: "SingleCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "SingleCell")
+        collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,11 +93,13 @@ final class SolarSystemViewController: UIViewController {
         updateQueue.async {
             self.sceneView.scene.rootNode.addChildNode(self.sunNode)
         }
+        collectionView.isHidden = false
+        allButton.isHidden = false
     }
     
     func initSunNode() -> PlanetNode {
         let sunNode = PlanetNode(planet: .sun)
-        let earthNode = PlanetNode(planet: .earth)
+        
         sunNode.addPlanet(planet: .mercury)
         sunNode.addPlanet(planet: .venus)
         sunNode.addPlanet(planet: .mars)
@@ -93,9 +108,45 @@ final class SolarSystemViewController: UIViewController {
         sunNode.addPlanet(planet: .uranus)
         sunNode.addPlanet(planet: .neptune)
         sunNode.addPlanet(planet: .pluto)
+        let earthNode = PlanetNode(planet: .earth)
         earthNode.addPlanet(planet: .moon)
         sunNode.addPlanet(planetNode: earthNode)
+        
+        sunNode.hiddenAll(isHidden: true)
         return sunNode
+    }
+    
+    func initSingleNode() {
+        if singleVisible { return }
+        let scene = SCNScene()
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        cameraNode.position = SCNVector3(x:0, y: 0, z: 5)
+        scene.rootNode.addChildNode(cameraNode)
+        for type in singleTypes {
+            let node = PlanetNode(planet: type)
+            if type == .earth {
+                node.addPlanet(planet: .moon)
+            }
+            node.position = SCNVector3(0, 0, 0)
+            node.scale = SCNVector3(type.scale, type.scale, type.scale)
+            node.name = type.rawValue
+            scene.rootNode.addChildNode(node)
+        }
+        singleSceneView.scene = scene
+        singleSceneView.allowsCameraControl = true
+        singleSceneView.backgroundColor = .clear
+    }
+    
+    func hiddenSingle(type: PlanetType) {
+        guard let scene = singleSceneView.scene else { return }
+        for node in scene.rootNode.childNodes {
+            if node.name == type.rawValue {
+                node.isHidden = false
+            } else {
+                node.isHidden = true
+            }
+        }
     }
     
     func setupCamera() {
@@ -159,6 +210,10 @@ final class SolarSystemViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
             self.isRestartAvailable = true
         }
+        collectionView.isHidden = true
+        allButton.isHidden = true
+        oneButton.isHidden = true
+        singleSceneView.isHidden = true
     }
     
     func displayErrorMessage(title: String, message: String) {
@@ -169,6 +224,17 @@ final class SolarSystemViewController: UIViewController {
         }
         alertController.addAction(restartAction)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func addButtonTouchUpInside(_ sender: UIButton) {
+        if sender.tag == 0 {
+            sunNode.hidden(planet: currentSingle, isHidden: false)
+            oneButton.isHidden = true
+        }
+        if sender.tag == 1 {
+            sunNode.hiddenAll(isHidden: false)
+        }
+        singleSceneView.isHidden = true
     }
     
 }
@@ -256,6 +322,44 @@ extension SolarSystemViewController: ARSCNViewDelegate, ARSessionDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         statusView.showMessage("RESETTING SESSION")
         restartExperience()
+    }
+    
+}
+
+extension SolarSystemViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return singleTypes.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SingleCell", for: indexPath) as? SingleCell else { return UICollectionViewCell() }
+        cell.imageView.image = singleTypes[indexPath.row].image
+        return cell
+    }
+    
+}
+
+extension SolarSystemViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 60, height: 60)
+    }
+    
+}
+
+extension SolarSystemViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if !singleVisible {
+            initSingleNode()
+            singleVisible = true
+        }
+        singleSceneView.isHidden = false
+        oneButton.isHidden = false
+        let type = singleTypes[indexPath.row]
+        currentSingle = type
+        hiddenSingle(type: type)
     }
     
 }

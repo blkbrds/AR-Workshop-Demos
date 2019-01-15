@@ -27,6 +27,8 @@
 		2ACAE85021C7931F007DE5F3 /* CoordinateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAE84E21C7931F007DE5F3 /* CoordinateVC.xib */; };
 		2ACF773721BFAAD70099A818 /* EnvironmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */; };
 		2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */; };
+		644E0F7121ECF55400DCF1BD /* SingleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E0F6F21ECF55400DCF1BD /* SingleCell.swift */; };
+		644E0F7221ECF55400DCF1BD /* SingleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 644E0F7021ECF55400DCF1BD /* SingleCell.xib */; };
 		646A384021ECCD9D007798BE /* SolarSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A383E21ECCD9D007798BE /* SolarSystemViewController.swift */; };
 		646A384121ECCD9D007798BE /* SolarSystemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646A383F21ECCD9D007798BE /* SolarSystemViewController.xib */; };
 		646A384721ECCE54007798BE /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A384521ECCE54007798BE /* StatusView.swift */; };
@@ -66,6 +68,8 @@
 		2ACAE84E21C7931F007DE5F3 /* CoordinateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoordinateVC.xib; sourceTree = "<group>"; };
 		2ACF773521BFAAD70099A818 /* EnvironmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVC.swift; sourceTree = "<group>"; };
 		2ACF773621BFAAD70099A818 /* EnvironmentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvironmentVC.xib; sourceTree = "<group>"; };
+		644E0F6F21ECF55400DCF1BD /* SingleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCell.swift; sourceTree = "<group>"; };
+		644E0F7021ECF55400DCF1BD /* SingleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleCell.xib; sourceTree = "<group>"; };
 		646A383E21ECCD9D007798BE /* SolarSystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemViewController.swift; sourceTree = "<group>"; };
 		646A383F21ECCD9D007798BE /* SolarSystemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SolarSystemViewController.xib; sourceTree = "<group>"; };
 		646A384521ECCE54007798BE /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
@@ -228,9 +232,19 @@
 			path = "03_ Environment";
 			sourceTree = "<group>";
 		};
+		644E0F6E21ECF53D00DCF1BD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				644E0F6F21ECF55400DCF1BD /* SingleCell.swift */,
+				644E0F7021ECF55400DCF1BD /* SingleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		646A383D21ECCD74007798BE /* 06_SolarSystem */ = {
 			isa = PBXGroup;
 			children = (
+				644E0F6E21ECF53D00DCF1BD /* Cell */,
 				646A385E21ECDCCB007798BE /* Focus */,
 				646A384F21ECD630007798BE /* Object */,
 				646A383E21ECCD9D007798BE /* SolarSystemViewController.swift */,
@@ -332,6 +346,7 @@
 				2ACF773821BFAAD70099A818 /* EnvironmentVC.xib in Resources */,
 				2A1B013121BE5F21007E1E75 /* WhatARKitVC.xib in Resources */,
 				2ACAE85021C7931F007DE5F3 /* CoordinateVC.xib in Resources */,
+				644E0F7221ECF55400DCF1BD /* SingleCell.xib in Resources */,
 				2A1B012C21BE5814007E1E75 /* Assets.scnassets in Resources */,
 				2A1B012A21BE4132007E1E75 /* vr_and_ar_tinhte.mp4 in Resources */,
 				2A4DB04F21BA2A0B00513B15 /* LaunchScreen.storyboard in Resources */,
@@ -353,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACAE84F21C7931F007DE5F3 /* CoordinateVC.swift in Sources */,
+				644E0F7121ECF55400DCF1BD /* SingleCell.swift in Sources */,
 				646A386021ECDD10007798BE /* FocusSquare.swift in Sources */,
 				646A385321ECD680007798BE /* PlanetType.swift in Sources */,
 				2A4DB06121BA539900513B15 /* IntroductionVC.swift in Sources */,

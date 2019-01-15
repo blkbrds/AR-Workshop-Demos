@@ -33,6 +33,7 @@ final class PlanetNode: SCNNode {
         position = SCNVector3(planetData.distance, 0, 0)
         if(planetData.hasChild!) {
             node = SCNNode()
+            node.name = planetType.rawValue
             node.geometry = geome
             node.position = SCNVector3(0, 0, 0)
             addChildNode(node)
@@ -96,9 +97,11 @@ final class PlanetNode: SCNNode {
     
     func addPlanet(planet:PlanetType) {
         let orbitNode = getPlanetOribit(planet: planet.getPlanet())
+        orbitNode.name = "orbit_\(planet.rawValue)"
         addChildNode(orbitNode)
         let planetNode = PlanetNode(planet:planet)
         let rotateNode = SCNNode()
+        rotateNode.name = "rotate_\(planet.rawValue)"
         rotateNode.addChildNode(planetNode)
         let planetData = planet.getPlanet()
         let action = getPlanetRotation(duration: planetData.revolutionTime!)
@@ -109,12 +112,34 @@ final class PlanetNode: SCNNode {
     func addPlanet(planetNode: PlanetNode) {
         let planet = planetNode.planetType
         let orbitNode = getPlanetOribit(planet: planet.getPlanet())
+        orbitNode.name = "orbit_\(planet.rawValue)"
         addChildNode(orbitNode)
         let rotateNode = SCNNode()
+        rotateNode.name = "rotate_\(planet.rawValue)"
         rotateNode.addChildNode(planetNode)
         let action = getPlanetRotation(duration: planet.getPlanet().revolutionTime!)
         rotateNode.runAction(action)
         addChildNode(rotateNode)
+    }
+    
+    func hidden(planet: PlanetType, isHidden: Bool) {
+        for node in childNodes {
+            if node.name == "orbit_\(planet.rawValue)" {
+                node.isHidden = isHidden
+            }
+            if node.name == "rotate_\(planet.rawValue)" {
+                node.isHidden = isHidden
+            }
+        }
+    }
+    
+    func hiddenAll(isHidden: Bool) {
+        for node in childNodes {
+            if node.name == PlanetType.sun.rawValue {
+                continue
+            }
+            node.isHidden = isHidden
+        }
     }
     
     private func getPlanetOribit(planet: Planet) -> SCNNode {

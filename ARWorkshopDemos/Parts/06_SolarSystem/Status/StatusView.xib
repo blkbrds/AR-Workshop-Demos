@@ -67,6 +67,9 @@
                         <constraint firstAttribute="height" constant="59" id="rh5-R3-zB7"/>
                     </constraints>
                     <state key="normal" image="refresh"/>
+                    <connections>
+                        <action selector="restartExperience:" destination="-1" eventType="touchUpInside" id="pQF-Jk-My3"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>

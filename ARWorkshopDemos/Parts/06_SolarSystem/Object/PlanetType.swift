@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum PlanetType {
+enum PlanetType: String {
     
     case sun
     case mercury
@@ -46,6 +46,48 @@ enum PlanetType {
             return Planet(radius: 0.08, diffuse: #imageLiteral(resourceName: "neptune"), specular: nil, emission: nil, normal: nil, anxisTime: 28, revolTime: 36, distance: 2.14);
         case .pluto:
             return Planet(radius: 0.04, diffuse: #imageLiteral(resourceName: "pluto"), specular: nil, emission: nil, normal: nil, anxisTime: 32, revolTime: 40, distance: 2.319);
+        }
+    }
+    
+    var isHidden: Bool {
+        return false
+    }
+    
+    var image: UIImage {
+        switch self {
+        case .earth:
+            return #imageLiteral(resourceName: "img-earth")
+        case .mercury:
+            return #imageLiteral(resourceName: "img-mercury")
+        case .jupiter:
+            return #imageLiteral(resourceName: "img-jupiter")
+        case .mars:
+            return #imageLiteral(resourceName: "img-mars")
+        case .neptune:
+            return #imageLiteral(resourceName: "img-neptune")
+        case .venus:
+            return #imageLiteral(resourceName: "img-venus")
+        case .saturn:
+            return #imageLiteral(resourceName: "img-saturn")
+        default:
+            return #imageLiteral(resourceName: "img-uranus")
+        }
+    }
+    
+    var scale: CGFloat {
+        switch self {
+        case .jupiter:
+            return 10
+        case .mars:
+            return 40
+        case .mercury:
+            return 60
+        case .saturn:
+            return 15
+        case .venus:
+            return 35
+        default:
+            return 20
         }
     }
     
